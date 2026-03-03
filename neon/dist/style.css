@@ -19,7 +19,7 @@ body {
 h1, h2, p {
 	margin: 0;
 	padding: 0;
-	color:white;
+	
 }
 h1, h2 {
 	font-weight: 400;
@@ -29,11 +29,13 @@ h1 {
     text-align: center;
     z-index: 100;
     position: relative;
+	color:white;
 }
 h1 span {
 	/*display: inline-block;*/
 	cursor: default;
 	z-index: 1000;
+	color:white;
 }
 
 @-webkit-keyframes turnOnH2 {
@@ -102,6 +104,7 @@ font-family: 'Sedgwick Ave Display', cursive;
      transform: rotate(-2deg); 
     text-align: center;
     display: block;
+	color:white;
 }
 a.icon:link, a.icon:visited {
 	text-decoration: none;
