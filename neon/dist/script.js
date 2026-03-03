@@ -19,7 +19,7 @@ title = 'Big Bobbies';
 copy = 'Phat Rats';
 
 li = 'Plague Rat Hotties';
-$('container').html('<h1>'+jk+'</h1><h2>'+title+'</h2><span class="tag">'+copy+' | '+li+'</span>');
+$('article').html('<h1>'+jk+'</h1><h2>'+title+'</h2><span class="tag">'+copy+' | '+li+'</span>');
 
 
 R = Math.floor(Math.random() * 255) + 1;
