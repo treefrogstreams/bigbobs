@@ -1,1 +1,115 @@
-big ol bob's
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+	  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <meta charset="UTF-8">
+    <title>Plasma Ball</title>
+    <link rel="stylesheet" href="/plasma/dist/style.css">
+<link href="https://fonts.googleapis.com/css?family=Fredoka+One|Monoton|Sedgwick+Ave+Display" rel="stylesheet">
+	  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+	  <link rel="stylesheet" href="/neon/dist/style.css">
+<style>
+	.container {
+  
+}
+
+.hidden-content {
+  visibility: hidden; /* Hides content but keeps it in accessibility tree */
+ 
+  position: absolute; /* Takes element out of flow - doesn't move background */
+  top: 0; /* Positions it directly below the button */
+  left: 0;
+  transition: opacity 0.3s ease;
+ 
+  padding: 10px;
+}
+
+.hidden-content.show {
+  visibility: visible;
+  opacity: 1;
+}
+
+</style>
+  </head>
+    
+  <body>
+  <body>
+	 
+
+  <div class="wrapper">
+    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="900px" height="622px" viewBox="0 0 900 622" enable-background="new 0 0 900 622" xml:space="preserve">
+      <filter id="mySVGfilter" x="-50%" y="-50%" width="200%" height="200%">
+        <feGaussianBlur in="SourceGraphic" stdDeviation="8" />
+      </filter>
+      <path class="path" fill="none" stroke="#FFFFFF" stroke-linecap="round" stroke-miterlimit="10" d="M712.547,303.5
+	c0,24.542-3.991,53.515-11.182,75.659c-7.452,22.951-38.483,36.353-52.387,55.457c-14.042,19.295-20.552,48.396-39.847,62.438
+	c-19.104,13.903-50.653,5.275-73.604,12.728c-22.145,7.19-42.485,25.805-67.027,25.805s-51.982,3.252-74.127-3.938
+	c-22.951-7.452-44.921-24.099-64.025-38.002c-19.294-14.042-32.856-36.407-46.898-55.702c-13.903-19.104-31.08-38.848-38.532-61.799
+	C237.728,354,231.75,328.042,231.75,303.5c0-24.541,3.304-51.368,10.494-73.513c7.452-22.951,30.143-39.759,44.046-58.863
+	c14.042-19.295,31.892-33.933,51.187-47.975c19.104-13.903,41.17-18.095,64.121-25.548c22.145-7.19,42.36-33.245,66.902-33.245
+	s48.264,15.257,70.408,22.447c22.951,7.452,43.959,19.078,63.063,32.98c19.295,14.042,23.36,40.294,37.402,59.589
+	c13.903,19.104,49.146,27.267,56.599,50.218C703.163,251.737,712.547,278.958,712.547,303.5z" />
+      <path class="path" fill="none" stroke="#FFFFFF" stroke-linecap="round" stroke-miterlimit="10" d="M468.416,234.857
+	c0-17.984-0.161-26.977-0.322-35.969c-0.04-2.249-0.08-4.011-0.118-6.157c-0.038,0.798-0.073-4.391-0.104-8.456
+	c-0.03-15.898-0.056-7.007-0.073-6.896c-0.009-2.892-0.016-19.416-0.021-7.915c-0.005-13.068-0.007-7.918-0.007-6.546
+	c0-11.642,0.021-17.884,0.059-14.858c0.039-0.593,0.095-1.075,0.166-0.678c0.144-27.477,0.348,11.445,0.594-5.82
+	c0.123-14.597,0.256-3.649,0.396-4.807c0.141-0.106,0.289,12.903,0.442-0.967c0.307-14.444,0.634-5.234,0.961-8.839
+	c0.327-9.095,0.654-7.146,0.961-9.362c0.307,1.025,0.594,2.473,0.839-5.25c0.122-12.176,0.235-11.275,0.335-10.245
+	c0.1-12.275,0.186-0.26,0.258,0.461c0.143,2.243,0.225-4.496,0.225-11.573" />
+      <path class="path" fill="none" stroke="#FFFFFF" stroke-linecap="round" stroke-miterlimit="10" d="M469.176,361.489
+	c0,9.407,0.035,16.462,0.088,22.342c0.053,5.879,0.124,10.583,0.194,15.286c0.07,4.367,0.142,12.175,0.194,15.286
+	c0.053,6.342,0.088,9.041,0.088,22.341c0-1.015-0.286,12.259-0.716,22.342c-0.43,11.576-1.003,13.962-1.575,15.286
+	c-0.572-2.765-1.146,9.323-1.575,15.286c-0.43,8.592-0.716,12.935-0.716,22.342" />
+      <path class="path" fill="none" stroke="#FFFFFF" stroke-linecap="round" stroke-miterlimit="10" d="M427.085,257.209
+	c-16.618-17.125-21.624-20.528-32.436-30.792c-3.604-3.421-7.853-7.605-13.392-13.313c-5.539-4.58-9.411-10.284-12.449-14.286
+	c-3.038-10.155-5.241-10.564-7.445-10.879c-2.204-0.904-4.408-2.009-7.446-10.879c-3.038-3.966-6.909-7.607-12.449-14.286" />
+      <path class="path" fill="none" stroke="#FFFFFF" stroke-linecap="round" stroke-miterlimit="10" d="M508.469,342.775
+	c16.617,17.124,21.623,20.527,32.436,30.791c3.604,3.422,7.854,7.605,13.393,13.313c5.539,4.58,9.41,10.284,12.448,14.286
+	c3.038,10.154,5.241,10.564,7.445,10.879c2.204,0.904,4.407,2.009,7.446,10.879c3.037,3.966,6.908,7.607,12.448,14.285" />
+      <path class="path" fill="none" stroke="#FFFFFF" stroke-linecap="round" stroke-miterlimit="10" d="M411.49,312.676
+	c-26.248,0-32.81,0.317-49.215,0.477c-5.468,0.053-12.03,2.829-20.779,0.088c-8.75-5.042-15.312-3.942-20.78-0.716
+	c-5.468,1.802-9.843-3.955-14.218-1.575c-4.375,1.547-8.75,0.095-14.218-1.575c-5.468,3.531-12.03-0.134-20.78-0.716" />
+      <path class="path" fill="none" stroke="#FFFFFF" stroke-linecap="round" stroke-miterlimit="10" d="M521.5,298.603
+	c39.75,0,39.75-3.784,79.5-3.784c9.938,0,17.391,0.327,23.602,1.775c6.211,7.057,11.18,0.686,16.148,3.904
+	c4.969-9.045,9.938,6.59,16.148,3.904c6.211,5.563,13.664-7.438,23.602,1.775" />
+      <path class="path" fill="none" stroke="#FFFFFF" stroke-linecap="round" stroke-miterlimit="10" d="M433.524,348.421
+	c-6.162,2.645-10.678,8.51-14.371,14.932c-3.693-5.54-6.563,12.726-9.434,10.616c-2.87,0.074-5.741,4.877-9.434,10.615
+	c-3.693,0.902-8.209,10.232-14.371,14.932c-6.162,7.097-11.098,13.951-15.421,13.879c-4.323,3.387-8.033,5.845-11.743,8.302
+	c-7.42,4.915-14.841,9.829-27.165,22.181" />
+      <path class="path" fill="none" stroke="#FFFFFF" stroke-linecap="round" stroke-miterlimit="10" d="M508.429,267.209
+	c19.458-17.903,23.325-23.296,34.987-34.945c3.887-3.883,8.641-8.461,15.126-14.429c6.485-0.934,11.681-7.831,16.231-13.412
+	c4.55,12.939,8.455-1.756,12.36-8.022c3.905-10.028,7.811-11.004,12.36-8.021c4.551-12.24,9.746-0.636,16.231-13.412" />
+    </svg>
+    <div class="ball">
+
+      <div class="ball-inner">
+
+        <div class="centreOut">
+			<div class="container">
+          <div class="centre" onclick="toggleTitle()">Click Me</div>
+			 <article></article>
+  
+ 
+</div>
+        </div>
+      </div>
+    </div>
+  </div>
+	  <div id="hiddenTitle" class="hidden-content">
+	  
+    <script  src="/neon/dist/script.js">here</script>
+
+  </div>
+<script>function toggleTitle() {
+  const title = document.getElementById("hiddenTitle");
+  title.classList.toggle("show");
+}
+</script>
+	   
+</body>
+    
+  </body>
+  
+</html>
