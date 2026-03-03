@@ -19,7 +19,7 @@
   visibility: hidden; /* Hides content but keeps it in accessibility tree */
  
   position: absolute; /* Takes element out of flow - doesn't move background */
-  top: 100%; /* Positions it directly below the button */
+  top: 0; /* Positions it directly below the button */
   left: 0;
   transition: opacity 0.3s ease;
  
@@ -97,16 +97,17 @@
       </div>
     </div>
   </div>
+	  <div id="hiddenTitle" class="hidden-content">
+	  
+    <script  src="../../neon/dist/script.js">here</script>
+
+  </div>
 <script>function toggleTitle() {
   const title = document.getElementById("hiddenTitle");
   title.classList.toggle("show");
 }
 </script>
-	   <div id="hiddenTitle" class="hidden-content">
-	  
-    <script  src="../../neon/dist/script.js">here</script>
-
-  </div>
+	   
 </body>
     
   </body>
