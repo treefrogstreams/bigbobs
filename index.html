@@ -11,32 +11,34 @@
 	  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 	  <link rel="stylesheet" href="/neon/dist/style.css">
 <style>
-	.bg {
+	.wrapper.bg {
+  /* Starting position: off-bottom of the screen */
+  transform: translateY(100vh); 
   
-  animation-duration: 5s;
+  /* Animation: name, duration, timing, and 'forwards' to stay in place */
+  animation: move-up 2.5s ease-out forwards;
+  
+  /* Ensure it stays behind the neon text */
+  position: relative;
+  z-index: 1; 
 }
-	
+
 @keyframes move-up {
   0% {
-    /* Start position: original vertical position (0) */
-    transform: translateY(0);
+    transform: translateY(100vh);
   }
   100% {
-    /* End position: moved up by 100 pixels (negative value for up direction) */
-    transform: translateY(-100px);
+    /* Final position: adjust this value to align perfectly behind your sign */
+    transform: translateY(0); 
   }
 }
 
-.hidden-content {
-  
-  transition: opacity 2s ease;
- 
+/* Ensure your neon container stays on top */
+#hiddenTitle, .container {
+  position: relative;
+  z-index: 10;
 }
 
-.hidden-content.show {
-  visibility: visible;
-  opacity: 1;
-}
 
 </style>
   </head>
