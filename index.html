@@ -44,6 +44,51 @@
 	width:100vw;
 }
 
+	/* Mobile Adjustments (Phones and small tablets) */
+@media screen and (max-width: 600px) {
+  
+  /* 1. Scale the Neon Text */
+  .container h1 {
+    font-size: 12vw !important; /* Scalable font size */
+    line-height: 1.1;
+    margin-bottom: 5px;
+  }
+  
+  .container h2 {
+    font-size: 6vw !important;
+    letter-spacing: 2px;
+  }
+
+  .tag {
+    font-size: 3.5vw !important;
+    display: block; /* Stack tags if they are too long */
+    margin-top: 10px;
+  }
+
+  /* 2. Fix the Container Width */
+  .container {
+    width: 95% !important;
+    max-width: 100vw;
+    padding: 0 10px;
+    box-sizing: border-box;
+    overflow-x: hidden; /* Prevents side-scrolling */
+  }
+
+  /* 3. Adjust the Plasma Ball SVG scale */
+  .wrapper.bg svg {
+    width: 100% !important;
+    height: auto !important;
+    transform: scale(1.2); /* Makes the ball feel bigger on small screens */
+  }
+
+  /* 4. Adjust the Rise Animation for Mobile */
+  @keyframes move-up {
+    0% { transform: translateY(100vh); }
+    100% { transform: translateY(-20px); } /* Adjust this to center it behind text */
+  }
+}
+
+
 </style>
   </head>
     
