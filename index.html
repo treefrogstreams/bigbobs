@@ -16,14 +16,9 @@
 }
 
 .hidden-content {
-  visibility: hidden; /* Hides content but keeps it in accessibility tree */
+  
+  transition: opacity 2s ease;
  
-  position: absolute; /* Takes element out of flow - doesn't move background */
-  top: 0; /* Positions it directly below the button */
-  left: 0;
-  transition: opacity 0.3s ease;
- 
-  padding: 10px;
 }
 
 .hidden-content.show {
