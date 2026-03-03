@@ -1,0 +1,94 @@
+body {
+  background: black;
+  display: grid;
+  margin: 0%;
+   }
+.wrapper {
+  linear;
+  margin: auto;
+  width: 928px;
+  height: 622px;
+   
+}
+.ball {
+  display: grid;
+  height: 500px;
+  width: 500px;
+  border: 0px solid white;
+  border-radius: 50%;
+  margin: -575px auto;
+  animation: glowBall 0.5s infinite alternate;
+}
+.ball-inner {
+  height: 500px;
+  width: 500px;
+  border-radius: 50%;
+  margin: auto;
+  animation: glowOuter 0.75s infinite alternate;
+  display: grid;
+}
+.centre {
+  filter: blur(10);
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin: 0% auto;
+  animation: glowCentre 0.5s infinite alternate;
+}
+.centre:hover {
+  background: white;
+}
+
+.centreOut {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+
+  margin: 40% auto;
+  animation: glowCentreOut 0.5s infinite alternate;
+}
+
+@keyframes glowCentre {
+  from {
+    box-shadow: inset 0px 0px 45px 5px purple;
+  }
+  to {
+    box-shadow: inset 0px 0px -45px 0px purple;
+  }
+}
+@keyframes glowCentreOut {
+  from {
+    box-shadow: 0px 0px -45px 0px purple;
+  }
+  to {
+    box-shadow: 0px 0px 45px 0px purple;
+  }
+}
+
+@keyframes glowOuter {
+  from {
+    box-shadow: inset 0px 0px -45px 0px pink;
+  }
+  to {
+    box-shadow: inset 0px 0px 195px 0px purple;
+  }
+}
+@keyframes glowBall {
+  from {
+    box-shadow: 0px 0px 0px 0px pink;
+  }
+  to {
+    box-shadow: 0px 0px 75px 5px magenta;
+  }
+}
+.path {
+  filter: url("#mySVGfilter");
+  stroke-dasharray: 100;
+  animation: dash 1.5s infinite;
+ }
+
+@keyframes dash {
+  to {
+    stroke-dashoffset: 600;
+  }
+}
