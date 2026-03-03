@@ -16,7 +16,7 @@ for (i = 0; i < jk3.length; i++) {
 jk.push('</span>');
 jk = jk.join('');
 title = 'Big Bobbies';
-copy = '<a href="www.phatrats.com">Phat Rats</a>';
+copy = 'PhatRats.com';
 
 li = 'Plague Rat Hotties';
 $('article').html('<h1>'+jk+'</h1><h2>'+title+'</h2><span class="tag">'+copy+' | '+li+'</span>');
