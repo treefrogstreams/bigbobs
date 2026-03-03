@@ -5,11 +5,39 @@
     <meta charset="UTF-8">
     <title>Plasma Ball</title>
     <link rel="stylesheet" href="./style.css">
+<link href="https://fonts.googleapis.com/css?family=Fredoka+One|Monoton|Sedgwick+Ave+Display" rel="stylesheet">
+	  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+	  <link rel="stylesheet" href="../neon/dist/style.css">
+<style>
+	.container {
+  position: relative; /* Essential: creates a containment block */
+}
 
+.hidden-content {
+  visibility: hidden; /* Hides content but keeps it in accessibility tree */
+  opacity: 0;
+  position: absolute; /* Takes element out of flow - doesn't move background */
+  top: 100%; /* Positions it directly below the button */
+  left: 0;
+  transition: opacity 0.3s ease;
+  background-color: white; /* Optional: adds background to hide background items behind it */
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+.hidden-content.show {
+  visibility: visible;
+  opacity: 1;
+}
+
+</style>
   </head>
     
   <body>
   <body>
+	 
+
   <div class="wrapper">
     <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="900px" height="622px" viewBox="0 0 900 622" enable-background="new 0 0 900 622" xml:space="preserve">
       <filter id="mySVGfilter" x="-50%" y="-50%" width="200%" height="200%">
@@ -59,12 +87,23 @@
       <div class="ball-inner">
 
         <div class="centreOut">
-          <div class="centre"></div>
+			<div class="container">
+          <div class="centre"  onclick="toggleTitle()"></div>
+			 
+  
+  <div id="hiddenTitle" class="hidden-content">
+    <h3>Big 'Ol Bob's</h3>
+  </div>
+</div>
         </div>
       </div>
     </div>
   </div>
-
+<script>function toggleTitle() {
+  const title = document.getElementById("hiddenTitle");
+  title.classList.toggle("show");
+}
+</script>
 </body>
     
   </body>
