@@ -15,10 +15,8 @@ for (i = 0; i < jk3.length; i++) {
 }
 jk.push('</span>');
 jk = jk.join('');
-title = 'Graphic Designer &bull; Web Developer';
-copy = '<span class="copyright"><a class="icon" href="http://jesperkronholm.se" target="_blank">&copy; Jesper Kronholm 2018</a></span>';
 
-li = '<a class="icon" href="https://www.linkedin.com/in/jesperkronholm/" target="_blank">LinkedIn</a>';
+
 $('article').html('<h1>'+jk+'</h1><h2>'+title+'</h2><span class="tag">'+copy+' | '+li+'</span>');
 
 R = Math.floor(Math.random() * 255) + 1;
@@ -41,7 +39,7 @@ neonColor2 = 'rgba('+RGBvals2[0]+','+RGBvals2[1]+','+RGBvals2[2]+','+RGBvals2[3]
 neonOut2 = 'rgba('+(RGBvals2[0]/5)+','+(RGBvals2[1]/5)+','+(RGBvals2[2]/5)+','+RGBvals2[3]+')';
 neonShadow2 = 'rgba('+RGBvals2[0]+','+RGBvals2[1]+','+RGBvals2[2]+','+(RGBvals2[3]*.9)+')';
 
-RGBvals3 = ['40','170','255','1'];
+RGBvals3 = ['255','200','50','1'];
 neonColor3 = 'rgba('+RGBvals3[0]+','+RGBvals3[1]+','+RGBvals3[2]+','+RGBvals3[3]+')';
 neonOut3 = 'rgba('+(RGBvals3[0]/5)+','+(RGBvals3[1]/5)+','+(RGBvals3[2]/5)+','+RGBvals3[3]+')';
 neonShadow3 = 'rgba('+RGBvals3[0]+','+RGBvals3[1]+','+RGBvals3[2]+','+(RGBvals3[3]*.9)+')';
