@@ -1,6 +1,6 @@
-jk1 = ['J','e','s','p','e','r'];
-jk2 = ['K','r','o','n'];
-jk3 = ['h','o','l','m'];
+jk1 = ['B','i','g'];
+jk2 = ['\'', 'o','l'];
+jk3 = ['B','o','B','\'','s'];
 jk = ['<span class="first">'];
 for (i = 0; i < jk1.length; i++) {
 	jk.push('<span class="out">'+jk1[i]+'</span>');
