@@ -11,8 +11,20 @@
 	  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 	  <link rel="stylesheet" href="/neon/dist/style.css">
 <style>
-	.container {
+	.bg {
   
+  animation-duration: 5s;
+}
+	
+@keyframes move-up {
+  0% {
+    /* Start position: original vertical position (0) */
+    transform: translateY(0);
+  }
+  100% {
+    /* End position: moved up by 100 pixels (negative value for up direction) */
+    transform: translateY(-100px);
+  }
 }
 
 .hidden-content {
@@ -34,7 +46,7 @@
   <body>
 	<article></article> 
 
-  <div class="wrapper">
+  <div class="wrapper bg">
     <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="900px" height="622px" viewBox="0 0 900 622" enable-background="new 0 0 900 622" xml:space="preserve">
       <filter id="mySVGfilter" x="-50%" y="-50%" width="200%" height="200%">
         <feGaussianBlur in="SourceGraphic" stdDeviation="8" />
