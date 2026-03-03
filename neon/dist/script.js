@@ -17,7 +17,6 @@ jk.push('</span>');
 jk = jk.join('');
 
 
-$('article').html('<h1>'+jk+'</h1><h2>'+title+'</h2><span class="tag">'+copy+' | '+li+'</span>');
 
 R = Math.floor(Math.random() * 255) + 1;
 G = Math.floor(Math.random() * 255) + 1;
