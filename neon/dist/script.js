@@ -167,9 +167,17 @@ function turnOnLights() {
 		console.log('all on');
 	}
 }
+
 setTimeout(function() {
 	turnOnLights();
 }, 500); 
 $(document).on('click', '.flicker', function () {
 	$(this).toggleClass('on').toggleClass('flicker');
+	
 });
+window.toggleTitle = function() {
+    
+    // Fill the container and show it
+    $('.container').html(fullHtml);
+    $('#hiddenTitle').show(); 
+};
